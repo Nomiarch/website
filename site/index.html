@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nomiarch — Infrastructure &amp; AI. Under your authority.</title>
+<meta name="description" content="Nomiarch is building an open source trust and authorization layer for enterprise infrastructure and AI. Independent policy. Controlled actions. Verifiable evidence.">
+<meta name="theme-color" content="#0b1110">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Nomiarch"><meta property="og:title" content="Nomiarch — Infrastructure &amp; AI. Under your authority."><meta property="og:description" content="Building the trust and authorization layer for sensitive computing. Explore the architecture, first milestone, and roadmap."><meta property="og:url" content="https://nomiarch.com/">
+<meta name="twitter:card" content="summary"><meta name="twitter:title" content="Nomiarch — Infrastructure &amp; AI. Under your authority."><meta name="twitter:description" content="Independent policy. Controlled actions. Verifiable evidence. An open source project in development.">
+<link rel="canonical" href="https://nomiarch.com/">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230b1110'/%3E%3Cpath d='M8 24V8h3l10 16h3V8M8 8l16 16' fill='none' stroke='%23b5efcd' stroke-width='3' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="topbar"><div class="container header-inner"><a class="brand" href="./" aria-label="Nomiarch home"><span class="brand-mark" aria-hidden="true">N</span>nomiarch<span class="brand-period" aria-hidden="true">.</span></a><nav class="nav" aria-label="Main navigation"><a class="hide-mobile" href="#platform">Platform</a><a class="hide-mobile" href="docs/architecture/">Architecture</a><a href="#roadmap">Roadmap</a><a class="nav-cta" href="docs/">Read the docs <span aria-hidden="true">↗</span></a></nav></div></header>
+<main id="main">
+<section class="hero container" aria-labelledby="hero-title">
+<a class="project-status" href="#roadmap"><span class="status-label">IN DEVELOPMENT</span><span>Building the first proof</span><span aria-hidden="true">↗</span></a>
+<h1 id="hero-title">Infrastructure &amp; AI.<br><span>Under your authority.</span></h1>
+<p class="hero-lede">Intelligence can propose. Your policy decides.</p>
+<p class="hero-description">We’re building an open source trust layer that keeps your systems within approved boundaries, controls what AI can do, and produces evidence of every change.</p>
+<div class="actions"><a class="btn" href="docs/">Explore Nomiarch <span aria-hidden="true">↗</span></a><a class="btn btn-secondary" href="#first-proof">See the first milestone</a></div>
+<div class="boundary-figure" aria-labelledby="boundary-title">
+<div class="figure-caption"><span id="boundary-title">INTELLIGENCE ≠ AUTHORITY</span><span>Proposed architecture</span></div>
+<div class="trust-flow">
+<div class="flow-node"><span class="node-kicker">01 / OBSERVE</span><strong>Your environment</strong><p>Read reality.<br>Detect the drift.</p><span class="node-foot">Read-only access</span></div>
+<div class="flow-node"><span class="node-kicker">02 / PROPOSE</span><strong>Local intelligence</strong><p>Explain the finding.<br>Propose a repair.</p><span class="node-foot">No execution authority</span></div>
+<div class="flow-node policy-node"><span class="node-kicker">03 / AUTHORIZE</span><strong>Your policy.<br>Your approval.</strong><p>Permit only the<br>exact approved action.</p><span class="node-foot">Independent of the model</span></div>
+<div class="flow-node"><span class="node-kicker">04 / EXECUTE</span><strong>Bounded action</strong><p>Apply the change.<br>Stay within scope.</p><span class="node-foot">Scoped credentials</span></div>
+<div class="flow-node"><span class="node-kicker">05 / VERIFY &amp; PROVE</span><strong>Verifiable evidence</strong><p>Check the result.<br>Preserve the record.</p><span class="node-foot">Independent verification</span></div>
+</div><div class="boundary-bottom"><span>Designed to operate inside your environment</span><span>The model never authorizes itself.</span></div>
+</div></section>
+<div class="principle-strip"><div class="container principles"><span>Infrastructure + AI</span><span>Policy before action</span><span>Human authority</span><span>Evidence by design</span></div></div>
+<section id="platform" class="section container">
+<div class="section-heading"><div><span class="eyebrow">01 / THE PLATFORM</span><h2>A finding is only<br>the beginning.</h2></div><p>Security tools identify problems. AI can suggest a fix. Nomiarch is being designed to connect the decision, the action, and the proof—so you can see why a change was allowed and whether it worked.</p></div>
+<div class="feature-grid">
+<article class="feature"><span class="feature-number">[ 01 ]</span><h3>Declare the boundary.</h3><p>Define where workloads may run, what data they can access, and which actions require approval. Make the operating rules explicit.</p><span class="feature-meta">POLICY · IDENTITY · SOVEREIGNTY</span></article>
+<article class="feature"><span class="feature-number">[ 02 ]</span><h3>Control the action.</h3><p>Let AI investigate and propose. Use independent authorization and a scoped executor to govern what can actually change.</p><span class="feature-meta">AI · AUTHORIZATION · EXECUTION</span></article>
+<article class="feature"><span class="feature-number">[ 03 ]</span><h3>Prove the result.</h3><p>Verify the deployed state. Connect observations, approvals, changes, and results in an evidence package you can inspect and retain.</p><span class="feature-meta">VERIFICATION · EVIDENCE · RECOVERY</span></article>
+</div><a class="text-link" href="docs/architecture/">Inside the architecture <span aria-hidden="true">↗</span></a>
+</section>
+<section class="deployment-section"><div class="container deployment-grid">
+<div><span class="eyebrow">YOUR ENVIRONMENT. YOUR BOUNDARY.</span><h2>Run where you’re<br>allowed to run.</h2><p class="section-copy">The long-term design spans public cloud, sovereign platforms, and disconnected environments. Your infrastructure stays in place. Nomiarch provides the policy and evidence layer across it.</p><a class="text-link" href="docs/running/">Explore the deployment plan <span aria-hidden="true">↗</span></a></div>
+<div class="deployment-modes" aria-label="Planned deployment modes">
+<article><span class="mode-number">01</span><div><h3>Cloud &amp; private infrastructure</h3><p>Begin with Azure and containerized services on a Linux VM.</p></div><span class="mode-status">FIRST TARGET</span></article>
+<article><span class="mode-number">02</span><div><h3>Restricted &amp; sovereign</h3><p>Extend policy to location, administration, keys, and egress.</p></div><span class="mode-status">PLANNED</span></article>
+<article><span class="mode-number">03</span><div><h3>Disconnected &amp; air-gapped</h3><p>Local models, controlled artifact import, and offline evidence.</p></div><span class="mode-status">PLANNED</span></article>
+</div></div></section>
+<section id="first-proof" class="section container">
+<div class="section-heading"><div><span class="eyebrow">02 / THE FIRST PROOF</span><h2>One real fix.<br>The entire trust loop.</h2></div><p>The first milestone is deliberately specific: detect an Azure Storage account that allows anonymous blob access, propose a repair, authorize it, and verify the result.</p></div>
+<div class="proof-grid"><div class="code-panel">
+<div class="code-title"><span>STORAGE ACCESS / PROPOSED CHANGE</span><span class="example-label">Illustrative example</span></div>
+<div class="code-body"><p class="code-comment">// Azure Storage account configuration</p><div class="diff-line removed"><span aria-hidden="true">−</span><code>allowBlobPublicAccess: true</code></div><div class="diff-line added"><span aria-hidden="true">+</span><code>allowBlobPublicAccess: false</code></div><div class="code-divider"></div><dl class="decision-record"><div><dt>PROPOSAL</dt><dd>Disable anonymous blob access</dd></div><div><dt>AUTHORITY</dt><dd>Policy + human approval</dd></div><div><dt>EXECUTION</dt><dd>Bound to the approved change</dd></div><div><dt>PROOF</dt><dd>Independent read-back + evidence</dd></div></dl></div><p class="code-note">Design target · No runnable release yet</p></div>
+<ol class="proof-steps">
+<li><span class="step-number" aria-hidden="true">01</span><div><h3>Observe the drift.</h3><p>Compare actual configuration with declared policy and identify the source that owns it.</p></div></li>
+<li><span class="step-number" aria-hidden="true">02</span><div><h3>Propose, then authorize.</h3><p>Generate a bounded repair. Bind independent policy and human approval to that exact change.</p></div></li>
+<li><span class="step-number" aria-hidden="true">03</span><div><h3>Execute and verify.</h3><p>Apply through scoped access. Read the deployed state again to check that the condition changed.</p></div></li>
+<li><span class="step-number" aria-hidden="true">04</span><div><h3>Preserve the evidence.</h3><p>Record the decision and result, with a verifiable local export for recovery and review.</p></div></li>
+</ol></div></section>
+<section id="roadmap" class="roadmap-section"><div class="container">
+<div class="section-heading"><div><span class="eyebrow">03 / BUILDING IN THE OPEN</span><h2>Progress you<br>can inspect.</h2></div><p>Start with a clear design. Build a narrow proof. Make it reproducible. Publish what works and what still needs to be tested.</p></div>
+<div class="roadmap">
+<article class="milestone current"><div class="milestone-meta"><span class="milestone-number">01</span><span class="badge badge-active">NOW / DESIGN</span></div><h3>Define the boundary.</h3><p>Trust model, service boundaries, VM deployment, and acceptance criteria for the first proof.</p><a class="text-link" href="docs/architecture/">Read the architecture <span aria-hidden="true">↗</span></a></article>
+<article class="milestone"><div class="milestone-meta"><span class="milestone-number">02</span><span class="badge">NEXT / PROTOTYPE</span></div><h3>Close the loop.</h3><p>Connect observation, local AI, policy, approval, execution, and verification in a test environment.</p></article>
+<article class="milestone"><div class="milestone-meta"><span class="milestone-number">03</span><span class="badge">THEN / RELEASE</span></div><h3>Make it reproducible.</h3><p>A versioned bundle, tested installation guide, refusal tests, and a recovery walkthrough.</p></article>
+</div><p class="future-note">Beyond the first proof: more infrastructure adapters, AI tool admission, sovereignty profiles, and disconnected operation.</p>
+</div></section>
+<section class="faq-section container"><div class="faq-grid"><div><span class="eyebrow">A FEW GOOD QUESTIONS</span><h2>Understand<br>the intent.</h2></div><div class="faq">
+<details><summary>What is Nomiarch?</summary><p>An open source project building a trust and authorization layer for enterprise infrastructure and AI. The goal is to keep systems within their approved operating boundaries and generate evidence of the decisions and changes made.</p></details>
+<details><summary>Who is it being built for?</summary><p>Platform engineers, security teams, and technology leaders responsible for sensitive systems. The initial focus is Canadian government and regulated enterprise use cases, with policy profiles designed to expand over time.</p></details>
+<details><summary>Can I run it today?</summary><p>There is no runnable release yet. The architecture and deployment plan are available now. The first release is intended to package containerized services for a supported Linux VM, with tested installation and recovery instructions.</p></details>
+<details><summary>Does it certify compliance or sovereignty?</summary><p>Nomiarch is being designed to enforce declared controls and produce evidence for review. Authorization and certification remain decisions for the responsible organization. Sovereignty also depends on hosting, jurisdiction, administration, keys, and dependencies.</p></details>
+<details><summary>Is it only for air-gapped AI?</summary><p>No. The scope includes conventional infrastructure and AI across connected, restricted, and disconnected environments. Fully air-gapped operation is a planned deployment mode, with controlled artifact import and no external service dependency in the internal runtime.</p></details>
+</div></div></section>
+<section class="closing"><div class="container closing-inner"><span class="eyebrow">NOMIARCH</span><h2>Give intelligence<br>a clear boundary.</h2><p>Explore the vision. Inspect the design. Follow the first proof.</p><div class="actions"><a class="btn" href="docs/">Read the documentation <span aria-hidden="true">↗</span></a><a class="text-link" href="docs/running/">What’s coming first <span aria-hidden="true">↗</span></a></div></div></section>
+</main>
+<footer class="footer"><div class="container footer-inner"><div><a class="brand" href="./" aria-label="Nomiarch home">nomiarch<span class="brand-period" aria-hidden="true">.</span></a><p>An independent project by Vibhu Anand.</p></div><nav class="footer-links" aria-label="Footer"><a href="docs/">Documentation</a><a href="docs/architecture/">Architecture</a><a href="#roadmap">Roadmap</a><a href="docs/running/">Release status</a></nav><span class="footer-year">© 2026 Nomiarch</span></div></footer>
+</body></html>
