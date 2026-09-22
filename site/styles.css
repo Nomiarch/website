@@ -23,3 +23,6 @@
 .doc pre code { background: transparent; padding: 0; color: inherit; white-space: pre; }
 .doc { min-width: 0; }
 .doc .actions { margin: 24px 0; flex-wrap: wrap; }
+
+.download-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; margin:28px 0; }
+@media (max-width:640px) { .download-grid { grid-template-columns:1fr; } }
