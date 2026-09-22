@@ -57,10 +57,12 @@
 
   const revealHash = () => {
     const index = indexFromHash();
-    if (index < 0) return false;
-    select(index);
-    const target = document.getElementById(decodeURIComponent(location.hash.slice(1)));
-    (target === panels[index] ? tablist : target).scrollIntoView();
+    let target;
+    try { target = document.getElementById(decodeURIComponent(location.hash.slice(1))); }
+    catch { return false; }
+    if (!target) return false;
+    if (index >= 0) select(index);
+    (index >= 0 && target === panels[index] ? tablist : target).scrollIntoView();
     return true;
   };
   // Select the OS family only; customers choose their Mac chip themselves.
