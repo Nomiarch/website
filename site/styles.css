@@ -17,3 +17,9 @@
 /* Signature wordmark: keep the intrinsic vector aspect ratio at every size. */
 .brand-wordmark{display:block;width:168px;height:auto;max-width:100%}
 @media(max-width:640px){.brand-wordmark{width:132px}}
+
+/* Offline quickstart commands remain readable on narrow screens. */
+.doc pre { background: #101b18; color: #ddf9ec; border: 1px solid #294037; border-radius: 8px; padding: 20px; overflow-x: auto; line-height: 1.65; max-width: 100%; }
+.doc pre code { background: transparent; padding: 0; color: inherit; white-space: pre; }
+.doc { min-width: 0; }
+.doc .actions { margin: 24px 0; flex-wrap: wrap; }
