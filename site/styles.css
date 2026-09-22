@@ -26,3 +26,24 @@
 
 .download-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; margin:28px 0; }
 @media (max-width:640px) { .download-grid { grid-template-columns:1fr; } }
+
+/* Platform guides share one page, with keyboard-accessible tabs. */
+.install-platforms { margin:24px 0; border:1px solid var(--line); border-radius:8px; }
+.platform-tabs { display:flex; gap:6px; padding:8px; border-bottom:1px solid var(--line); background:var(--surface); border-radius:8px 8px 0 0; }
+.platform-tabs a { flex:1; text-align:center; padding:12px 8px; border-radius:5px; font-size:1rem; font-weight:500; color:var(--muted); }
+.platform-tabs a:hover { color:var(--accent); background:#183024; }
+.platform-tabs a[aria-selected="true"] { color:var(--bg); background:var(--accent); font-weight:600; }
+.platform-tabs a:focus-visible, .platform-panel:focus-visible { outline:2px solid var(--accent); outline-offset:-4px; }
+.platform-tabs a[aria-selected="true"]:focus-visible { outline-color:var(--bg); }
+.platform-panel { padding:28px; }
+.platform-panel[hidden] { display:none; }
+.doc .platform-panel > h3 { margin-top:0; font-size:1.4rem; }
+.platform-downloads { margin:24px 0; }
+.platform-panel h4 { margin:0 0 12px; font-size:1.15rem; font-weight:500; line-height:1.4; letter-spacing:-.02em; }
+.platform-panel .doc-card { padding:22px; }
+.platform-panel .doc-card .mono { margin-bottom:14px; }
+.platform-panel .doc-card p { margin-bottom:0; }
+.platform-panel .callout { margin-bottom:22px; }
+.platform-panel .callout h4 { color:var(--accent); }
+.platform-panel .callout li { color:#bdcfc1; }
+@media (max-width:640px) { .platform-panel { padding:20px 16px; } .platform-tabs { gap:4px; padding:6px; } }
