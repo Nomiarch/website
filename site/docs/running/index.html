@@ -4,7 +4,7 @@
 <meta property="og:type" content="website"><meta property="og:title" content="Get started — Nomiarch"><meta property="og:description" content="Download the Nomiarch desktop wizard for Windows, macOS or Linux. Guided local VM setup, offline downloads and maintenance."><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Get started — Nomiarch"><meta name="twitter:description" content="Download the Nomiarch desktop wizard for Windows, macOS or Linux. Guided local VM setup, offline downloads and maintenance.">
   <link rel="icon" type="image/svg+xml" href="../../assets/brand/favicon.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon-32.png">
-<link rel="apple-touch-icon" sizes="180x180" href="../../assets/brand/apple-touch-icon.png"><link rel="stylesheet" href="../../styles.css"><link rel="canonical" href="https://nomiarch.com/docs/running/"><meta property="og:url" content="https://nomiarch.com/docs/running/">
+<link rel="apple-touch-icon" sizes="180x180" href="../../assets/brand/apple-touch-icon.png"><link rel="stylesheet" href="../../styles.css?install-tabs=1"><link rel="canonical" href="https://nomiarch.com/docs/running/"><meta property="og:url" content="https://nomiarch.com/docs/running/">
 <meta property="og:image" content="https://nomiarch.com/assets/brand/social-preview-v1.png">
 <meta property="og:image:secure_url" content="https://nomiarch.com/assets/brand/social-preview-v1.png">
 <meta property="og:image:type" content="image/png">
@@ -15,22 +15,77 @@
 <meta name="twitter:image" content="https://nomiarch.com/assets/brand/social-preview-v1.png">
 <meta name="twitter:image:alt" content="Nomiarch — Infrastructure &amp; AI. Under your authority.">
 <meta property="og:site_name" content="Nomiarch">
+<script src="../../install-tabs.js" defer></script>
 </head><body>
 <a class="skip-link" href="#main">Skip to content</a>  <header class="topbar"><div class="container header-inner"><a class="brand" href="../../" aria-label="Nomiarch home"><img class="brand-wordmark" src="../../assets/brand/wordmark-mint.svg" alt="Nomiarch" width="821" height="120"></a><nav class="nav" aria-label="Main navigation"><a class="hide-mobile" href="../../#platform">Platform</a><a class="hide-mobile" href="../architecture/">Architecture</a><a href="../../#roadmap">Roadmap</a><a class="nav-cta" href="../">Read the docs <span aria-hidden="true">↗</span></a></nav></div></header>
-<div class="container docs-shell"><aside class="sidebar"><div class="sidebar-label">Documentation</div><nav aria-label="Documentation navigation"><a href="../">Overview</a><a href="../architecture/">Architecture</a><a href="./" aria-current="page">Get started</a></nav><div class="sidebar-note">Preview 0.1.0.dev2<br>22 September 2026<br><br>Nomiarch.<br>Engineering preview.</div></aside><main id="main" class="doc"><div class="breadcrumb"><a href="../../">Home</a><span aria-hidden="true">/</span><span>Get started</span></div>
+<div class="container docs-shell"><aside class="sidebar"><div class="sidebar-label">Documentation</div><nav aria-label="Documentation navigation"><a href="../">Overview</a><a href="../architecture/">Architecture</a><a href="./" aria-current="page">Get started</a></nav><div class="sidebar-note">Desktop 0.1.0.dev3<br>Core 0.1.0.dev2<br>22 September 2026<br><br>Nomiarch.<br>Engineering preview.</div></aside><main id="main" class="doc"><div class="breadcrumb"><a href="../../">Home</a><span aria-hidden="true">/</span><span>Get started</span></div>
 <span class="badge">Desktop preview · 0.1.0.dev3</span>
 <h1>Download. Open. Set up.</h1>
-<p class="lede">A guided desktop app creates your first Nomiarch system. Choose your computer below—no terminal commands, Python installation or manual model downloads.</p>
-<div class="download-grid">
-<a class="doc-card" href="https://github.com/Nomiarch/nomiarch/releases/download/desktop-v0.1.0.dev3/NomiarchSetup-windows-x64.exe"><span class="mono">WINDOWS</span><h3>Download for Windows ↗</h3><p>Windows 11 Pro, Enterprise or Education. Intel / AMD, with Hyper-V.</p></a>
-<a class="doc-card" href="https://github.com/Nomiarch/nomiarch/releases/download/desktop-v0.1.0.dev3/NomiarchSetup-macos-arm64.zip"><span class="mono">MAC · APPLE SILICON</span><h3>Download for Apple chips ↗</h3><p>For Macs with an M-series chip. Extract the ZIP and open NomiarchSetup.</p></a>
-<a class="doc-card" href="https://github.com/Nomiarch/nomiarch/releases/download/desktop-v0.1.0.dev3/NomiarchSetup-macos-intel.zip"><span class="mono">MAC · INTEL</span><h3>Download for Intel Mac ↗</h3><p>For Intel-based Macs. Extract the ZIP and open NomiarchSetup.</p></a>
-<a class="doc-card" href="https://github.com/Nomiarch/nomiarch/releases/download/desktop-v0.1.0.dev3/NomiarchSetup-linux-x64"><span class="mono">LINUX · INTEL / AMD</span><h3>Download for Linux ↗</h3><p>Ubuntu 24.04 reference host. Allow the downloaded file to run as an application.</p></a>
+<p class="lede">A guided desktop app creates your first Nomiarch system. Choose your computer for the right download and opening instructions, then follow the wizard.</p>
+<p>Reserve 8 GB of memory and at least 50 GB of free disk space for the first evaluation. A small Linux VM will house Core, the model and your system data.</p>
+<div class="callout neutral"><strong>Early evaluation release.</strong><p>The desktop apps are unsigned, and the Mac app is not notarized. Your computer may show a warning or block the app. Real customer VM installation and physical air-gap testing remain under evaluation.</p></div>
+<h2 id="prepare">1. Download and open the wizard</h2>
+<div class="install-platforms" data-install-tabs>
+  <nav class="platform-tabs" aria-label="Choose your operating system">
+    <a id="tab-windows" href="#windows">Windows</a>
+    <a id="tab-macos" href="#macos">macOS</a>
+    <a id="tab-linux" href="#linux">Linux</a>
+  </nav>
+  <section id="windows" class="platform-panel">
+    <h3>Set up on Windows</h3>
+    <p>For <strong>Windows 11 Pro, Enterprise or Education</strong> on Intel / AMD with Hyper-V. Windows Home and ARM Windows are not supported in this preview.</p>
+    <div class="platform-downloads">
+      <a class="btn" href="https://github.com/Nomiarch/nomiarch/releases/download/desktop-v0.1.0.dev3/NomiarchSetup-windows-x64.exe">Download for Windows ↗</a>
+    </div>
+    <ol>
+      <li>Download the app above, then open <strong>NomiarchSetup-windows-x64.exe</strong> from Downloads.</li>
+      <li>Choose <strong>Set up this computer</strong>.</li>
+      <li>If requested, choose <strong>Enable Hyper-V</strong>, approve the Windows administrator prompt and restart your computer. Open Nomiarch Setup again after restarting.</li>
+      <li>Choose <strong>Install VM support</strong> if it is missing. Complete Canonical's installer, then return to the wizard and choose <strong>Check again</strong>.</li>
+    </ol>
+    <p>This unsigned preview may trigger a Windows security warning. On a managed computer, ask your IT administrator whether evaluation is permitted. Keep Windows security protections enabled.</p>
+  </section>
+  <section id="macos" class="platform-panel">
+    <h3>Set up on your Mac</h3>
+    <p>Open <strong>Apple menu → About This Mac</strong>. If you see <strong>Chip</strong> with an Apple chip name, choose Apple silicon. If you see <strong>Processor</strong> with Intel, choose Intel Mac. <a href="https://support.apple.com/en-ca/116943">Help identifying your Mac ↗</a></p>
+    <div class="download-grid">
+      <a class="doc-card" href="https://github.com/Nomiarch/nomiarch/releases/download/desktop-v0.1.0.dev3/NomiarchSetup-macos-arm64.zip"><span class="mono">APPLE SILICON</span><h4>Download for Apple chips ↗</h4><p>For Macs with an Apple chip.</p></a>
+      <a class="doc-card" href="https://github.com/Nomiarch/nomiarch/releases/download/desktop-v0.1.0.dev3/NomiarchSetup-macos-intel.zip"><span class="mono">INTEL MAC</span><h4>Download for Intel Mac ↗</h4><p>For Macs with an Intel processor.</p></a>
+    </div>
+    <ol>
+      <li>Download the ZIP for your Mac, then double-click it in Downloads to extract the app.</li>
+      <li>Move <strong>NomiarchSetup</strong> to Applications and double-click it.</li>
+      <li>If Apple shows <strong>“NomiarchSetup” Not Opened</strong>, follow the steps below.</li>
+    </ol>
+    <div id="macos-open-anyway" class="callout">
+      <h4>Apple could not verify NomiarchSetup?</h4>
+      <p>This preview is unsigned and has not been notarized by Apple. If you downloaded it using this page and trust it for testing on your Mac, you can allow this app:</p>
+      <ol>
+        <li>Click <strong>Done</strong> on the warning.</li>
+        <li>Open <strong>Apple menu → System Settings → Privacy &amp; Security</strong>.</li>
+        <li>Scroll to <strong>Security</strong>. Find the NomiarchSetup message and click <strong>Open Anyway</strong>.</li>
+        <li>Confirm with Touch ID or your password if requested, then click <strong>Open</strong>.</li>
+      </ol>
+      <p>This saves an exception for NomiarchSetup. <a href="https://support.apple.com/en-ca/102445">Apple's official opening instructions ↗</a></p>
+      <p>If the button is missing, try opening the app once more and return to this settings page. On a managed Mac, ask your IT administrator if the option is restricted. Keep your Mac's security protections enabled.</p>
+    </div>
+    <p>Once the app opens, choose <strong>Set up this computer</strong>. If requested, choose <strong>Install VM support</strong> and complete Canonical's installer. Return to the wizard, select <strong>Check again</strong>, then continue below.</p>
+  </section>
+  <section id="linux" class="platform-panel">
+    <h3>Set up on Linux</h3>
+    <p>The reference desktop is <strong>Ubuntu 24.04 on Intel / AMD</strong>. Other Linux distributions are not yet qualified for this preview.</p>
+    <div class="platform-downloads">
+      <a class="btn" href="https://github.com/Nomiarch/nomiarch/releases/download/desktop-v0.1.0.dev3/NomiarchSetup-linux-x64">Download for Linux ↗</a>
+    </div>
+    <ol>
+      <li>Download the app above. In your file manager, open its properties and allow the file to run as a program.</li>
+      <li>Open <strong>NomiarchSetup-linux-x64</strong> and choose <strong>Set up this computer</strong>.</li>
+      <li>If VM support is missing, install <strong>Canonical Multipass</strong> through your approved software manager. Return to Nomiarch Setup and choose <strong>Check again</strong>.</li>
+    </ol>
+    <p>Linux VM support is installed separately in this preview. <a href="https://canonical.com/multipass/docs/latest/how-to-guides/install-multipass/">Canonical's installation guide ↗</a></p>
+  </section>
 </div>
 <p><a href="https://github.com/Nomiarch/nomiarch/releases/tag/desktop-v0.1.0.dev3">Release notes and download checksums ↗</a></p>
-<div class="callout"><strong>Early evaluation release.</strong><p>The apps are not yet publisher-signed or notarized. Windows or macOS may warn or block them; do not disable operating-system protections. Windows Home and ARM Windows are not supported yet. Real customer VM installation and physical air-gap testing remain under evaluation.</p></div>
-<h2 id="prepare">1. Open Nomiarch Setup</h2><p>Choose <strong>Set up this computer</strong>. The app checks your computer and guides you through installing VM support if it is missing. Windows may request administrator approval and a restart to enable Hyper-V.</p>
-<p>Reserve 8 GB of memory and at least 50 GB of free disk space for the first evaluation. A small Linux VM will house Core, the model and your system data.</p>
 <h2 id="download">2. Let the app prepare the files</h2><p>Choose <strong>Download and verify automatically</strong>. Nomiarch downloads the runtime, local model and matching Ubuntu image, checks the files and verifies the Core signature. You see download progress in the app.</p>
 <p>Already inside an isolated environment? Choose <strong>Use files I brought into this environment</strong>. This mode checks the local kit without downloading anything.</p>
 <h2 id="install">3. Review and install</h2><p>Choose a system name, keep the recommended settings, and select <strong>Create my Nomiarch system</strong>. The app creates a new VM, installs Core and checks it using the real local model. Your existing VMs are left in place.</p>
@@ -40,7 +95,7 @@
 <p>Expect downtime during upgrades. K3s migrations and automatic rollback are not supported in this preview. <a href="https://github.com/Nomiarch/nomiarch/blob/main/docs/testing.md#upgrade-repair-and-recovery">Detailed recovery procedure ↗</a></p>
 <h2 id="offline">Preparing an offline installation</h2><p>On a connected computer, choose <strong>Download an offline kit</strong>. Transfer the kit and desktop app to a computer with the same CPU architecture through your approved process. Install VM support on that computer before isolation.</p><p>The app works with an existing isolated host and administration network. It does not create a physical air gap by disconnecting your computer.</p>
 <h2 id="cleanup">Finished testing?</h2><p>In Manage, select the exact installation and choose <strong>Remove selected VM</strong>. The app asks before permanently deleting it. Save any backup you need first.</p>
-<h2 id="help">If setup stops</h2><p>The app shows the error and preserves installation records. Retry a download to reuse verified completed files. For an interrupted installation, use Manage to inspect, repair or remove the retained VM. Starting a new install creates another VM.</p>
+<h2 id="help">If setup stops</h2><p>Mac app blocked before it opens? Follow the <a href="#macos-open-anyway">Mac opening steps</a>.</p><p>The app shows the error and preserves installation records. Retry a download to reuse verified completed files. For an interrupted installation, use Manage to inspect, repair or remove the retained VM. Starting a new install creates another VM.</p>
 <p><a href="https://github.com/Nomiarch/nomiarch/blob/main/docs/desktop.md">Desktop guide ↗</a> · <a href="https://github.com/Nomiarch/nomiarch/blob/main/docs/testing.md">Advanced setup and Azure instructions ↗</a></p>
 <p class="smallprint">Desktop 0.1.0.dev3 · Core 0.1.0.dev2 · Windows, macOS and Linux preview</p></main></div>  <footer class="footer"><div class="container footer-inner"><div><a class="brand" href="../../" aria-label="Nomiarch home"><img class="brand-wordmark" src="../../assets/brand/wordmark-mint.svg" alt="Nomiarch" width="821" height="120"></a><p>An independent project by Vibhu Anand.</p></div><nav class="footer-links" aria-label="Footer"><a href="../">Documentation</a><a href="../architecture/">Architecture</a><a href="../../#roadmap">Roadmap</a><a href="./">Release status</a></nav><span class="footer-year">© 2026 Nomiarch</span></div></footer>
 </body></html>
