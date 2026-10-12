@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Get started — Nomiarch</title><meta name="description" content="Download the Nomiarch wizard for Windows, macOS or Linux. Guided local and Azure setup, customer-owned configuration and human approvals."><meta name="theme-color" content="#0b1110">
-<meta property="og:type" content="website"><meta property="og:title" content="Get started — Nomiarch"><meta property="og:description" content="Download the Nomiarch wizard for Windows, macOS or Linux. Guided local and Azure setup, customer-owned configuration and human approvals."><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Get started — Nomiarch"><meta name="twitter:description" content="Download the Nomiarch wizard for Windows, macOS or Linux. Guided local and Azure setup, customer-owned configuration and human approvals.">
+<title>Get started — Nomiarch</title><meta name="description" content="Download the Nomiarch wizard for Windows, macOS or Linux. Infrastructure-only Local, On-premises and Azure setup with GitHub SaaS or Enterprise Server and human approvals."><meta name="theme-color" content="#0b1110">
+<meta property="og:type" content="website"><meta property="og:title" content="Get started — Nomiarch"><meta property="og:description" content="Download the Nomiarch wizard for Windows, macOS or Linux. Infrastructure-only Local, On-premises and Azure setup with GitHub SaaS or Enterprise Server and human approvals."><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Get started — Nomiarch"><meta name="twitter:description" content="Download the Nomiarch wizard for Windows, macOS or Linux. Infrastructure-only Local, On-premises and Azure setup with GitHub SaaS or Enterprise Server and human approvals.">
   <link rel="icon" type="image/svg+xml" href="../../assets/brand/favicon.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon-32.png">
 <link rel="apple-touch-icon" sizes="180x180" href="../../assets/brand/apple-touch-icon.png"><link rel="stylesheet" href="../../styles.css?install-tabs=1"><link rel="canonical" href="https://nomiarch.com/docs/running/"><meta property="og:url" content="https://nomiarch.com/docs/running/">
@@ -18,11 +18,11 @@
 <script src="../../install-tabs.js" defer></script>
 </head><body>
 <a class="skip-link" href="#main">Skip to content</a>  <header class="topbar"><div class="container header-inner"><a class="brand" href="../../" aria-label="Nomiarch home"><img class="brand-wordmark" src="../../assets/brand/wordmark-mint.svg" alt="Nomiarch" width="821" height="120"></a><nav class="nav" aria-label="Main navigation"><a class="hide-mobile" href="../../#platform">Platform</a><a class="hide-mobile" href="../architecture/">Architecture</a><a href="../../#roadmap">Roadmap</a><a class="nav-cta" href="../">Read the docs <span aria-hidden="true">↗</span></a></nav></div></header>
-<div class="container docs-shell"><aside class="sidebar"><div class="sidebar-label">Documentation</div><nav aria-label="Documentation navigation"><a href="../">Overview</a><a href="../architecture/">Architecture</a><a href="./" aria-current="page">Get started</a></nav><div class="sidebar-note">Desktop 0.1.0.dev5<br>Core 0.1.0.dev3<br>22 September 2026<br><br>Nomiarch.<br>Engineering preview.</div></aside><main id="main" class="doc"><div class="breadcrumb"><a href="../../">Home</a><span aria-hidden="true">/</span><span>Get started</span></div>
-<span class="badge">Desktop preview · 0.1.0.dev5</span>
+<div class="container docs-shell"><aside class="sidebar"><div class="sidebar-label">Documentation</div><nav aria-label="Documentation navigation"><a href="../">Overview</a><a href="../architecture/">Architecture</a><a href="./" aria-current="page">Get started</a></nav><div class="sidebar-note">Desktop 0.1.0.dev6<br>Core 0.1.0.dev3<br>12 October 2026<br><br>Nomiarch.<br>Engineering preview.</div></aside><main id="main" class="doc"><div class="breadcrumb"><a href="../../">Home</a><span aria-hidden="true">/</span><span>Get started</span></div>
+<span class="badge">Desktop preview · 0.1.0.dev6</span>
 <h1>Download. Open. Set up.</h1>
 <p class="lede">Choose your computer, open the wizard and decide where Nomiarch will run. You review your configuration and approve a plan before the system is created.</p>
-<p>Reserve 8 GB of memory and at least 50 GB of free disk space for the first evaluation. A small Linux VM will house Core, the model and your system data.</p>
+<p>The new infrastructure-only path creates or adopts a VM first. No model, Core bundle, GPU or AI agent is required. For a Local evaluation, the defaults allocate 2 vCPUs, 8 GB of memory and 40 GB of storage; allow additional host space for downloads.</p>
 <div class="callout neutral"><strong>Early evaluation release.</strong><p>The desktop apps are unsigned, and the Mac app is not notarized. Your computer may show a warning or block the app. Real customer VM installation and physical air-gap testing remain under evaluation.</p></div>
 <h2 id="prepare">1. Download and open the wizard</h2>
 <div class="install-platforms" data-install-tabs>
@@ -35,13 +35,13 @@
     <h3>Set up on Windows</h3>
     <p>For <strong>Windows 11 Pro, Enterprise or Education</strong> on Intel / AMD with Hyper-V. Windows Home and ARM Windows are not supported in this preview.</p>
     <div class="platform-downloads">
-      <a class="btn" href="https://github.com/Nomiarch/nomiarch/releases/download/desktop-v0.1.0.dev5/NomiarchSetup-windows-x64.exe">Download for Windows ↗</a>
+      <a class="btn" href="https://github.com/Nomiarch/nomiarch/releases/download/desktop-v0.1.0.dev6/NomiarchSetup-windows-x64.exe">Download for Windows ↗</a>
     </div>
     <ol>
       <li>Download the app above, then open <strong>NomiarchSetup-windows-x64.exe</strong> from Downloads.</li>
-      <li>Choose <strong>Set up this computer</strong>, enter your project details and choose personal or organisation use.</li>
-      <li>If requested, choose <strong>Enable Hyper-V</strong>, approve the Windows administrator prompt and restart your computer. Open Nomiarch Setup again after restarting.</li>
-      <li>Choose <strong>Install VM support</strong> if it is missing. Complete Canonical's installer, then return to the wizard and choose <strong>Check again</strong>.</li>
+      <li>Install Canonical Multipass and enable Hyper-V through your approved Windows setup process before Local provisioning. Then choose <strong>Set up infrastructure — Local, On-premises or Cloud (no AI yet)</strong>.</li>
+      <li>Use the <a href="https://canonical.com/multipass/docs/latest/how-to-guides/install-multipass/">Canonical installation guide</a> for VM support. Windows may require administrator approval and a restart.</li>
+      <li>Reopen Nomiarch after installing VM support. The infrastructure flow checks Multipass before planning, but does not yet expose its installation controls.</li>
     </ol>
     <p>This unsigned preview may trigger a Windows security warning. On a managed computer, ask your IT administrator whether evaluation is permitted. Keep Windows security protections enabled.</p>
   </section>
@@ -49,8 +49,8 @@
     <h3>Set up on your Mac</h3>
     <p>Open <strong>Apple menu → About This Mac</strong>. If you see <strong>Chip</strong> with an Apple chip name, choose Apple silicon. If you see <strong>Processor</strong> with Intel, choose Intel Mac. <a href="https://support.apple.com/en-ca/116943">Help identifying your Mac ↗</a></p>
     <div class="download-grid">
-      <a class="doc-card" href="https://github.com/Nomiarch/nomiarch/releases/download/desktop-v0.1.0.dev5/NomiarchSetup-macos-arm64.zip"><span class="mono">APPLE SILICON</span><h4>Download for Apple chips ↗</h4><p>For Macs with an Apple chip.</p></a>
-      <a class="doc-card" href="https://github.com/Nomiarch/nomiarch/releases/download/desktop-v0.1.0.dev5/NomiarchSetup-macos-intel.zip"><span class="mono">INTEL MAC</span><h4>Download for Intel Mac ↗</h4><p>For Macs with an Intel processor.</p></a>
+      <a class="doc-card" href="https://github.com/Nomiarch/nomiarch/releases/download/desktop-v0.1.0.dev6/NomiarchSetup-macos-arm64.zip"><span class="mono">APPLE SILICON</span><h4>Download for Apple chips ↗</h4><p>For Macs with an Apple chip.</p></a>
+      <a class="doc-card" href="https://github.com/Nomiarch/nomiarch/releases/download/desktop-v0.1.0.dev6/NomiarchSetup-macos-intel.zip"><span class="mono">INTEL MAC</span><h4>Download for Intel Mac ↗</h4><p>For Macs with an Intel processor.</p></a>
     </div>
     <ol>
       <li>Download the ZIP for your Mac, then double-click it in Downloads to extract the app.</li>
@@ -69,101 +69,59 @@
       <p>This saves an exception for NomiarchSetup. <a href="https://support.apple.com/en-ca/102445">Apple's official opening instructions ↗</a></p>
       <p>If the button is missing, try opening the app once more and return to this settings page. On a managed Mac, ask your IT administrator if the option is restricted. Keep your Mac's security protections enabled.</p>
     </div>
-    <p>Once the app opens, choose <strong>Set up this computer</strong> and complete your project and configuration choices. If requested, choose <strong>Install VM support</strong> and complete Canonical's installer. Return to the wizard, select <strong>Check again</strong>, then continue below.</p>
+    <p>For Local provisioning, first install <a href="https://canonical.com/multipass/docs/latest/how-to-guides/install-multipass/">Canonical Multipass</a>. Then open the app and choose <strong>Set up infrastructure — Local, On-premises or Cloud (no AI yet)</strong>. You can inspect the choices before installing VM support; actual provisioning requires it.</p>
   </section>
   <section id="linux" class="platform-panel">
     <h3>Set up on Linux</h3>
     <p>The reference desktop is <strong>Ubuntu 24.04 on Intel / AMD</strong>. Other Linux distributions are not yet qualified for this preview.</p>
     <div class="platform-downloads">
-      <a class="btn" href="https://github.com/Nomiarch/nomiarch/releases/download/desktop-v0.1.0.dev5/NomiarchSetup-linux-x64">Download for Linux ↗</a>
+      <a class="btn" href="https://github.com/Nomiarch/nomiarch/releases/download/desktop-v0.1.0.dev6/NomiarchSetup-linux-x64">Download for Linux ↗</a>
     </div>
     <ol>
       <li>Download the app above. In your file manager, open its properties and allow the file to run as a program.</li>
-      <li>Open <strong>NomiarchSetup-linux-x64</strong> and choose <strong>Set up this computer</strong>.</li>
-      <li>If VM support is missing, install <strong>Canonical Multipass</strong> through your approved software manager. Return to Nomiarch Setup and choose <strong>Check again</strong>.</li>
+      <li>Open <strong>NomiarchSetup-linux-x64</strong> and choose <strong>Set up infrastructure — Local, On-premises or Cloud (no AI yet)</strong>.</li>
+      <li>If VM support is missing, install <strong>Canonical Multipass</strong> through your approved software manager. Reopen Nomiarch Setup after installation.</li>
     </ol>
     <p>Linux VM support is installed separately in this preview. <a href="https://canonical.com/multipass/docs/latest/how-to-guides/install-multipass/">Canonical's installation guide ↗</a></p>
   </section>
 </div>
-<p><a href="https://github.com/Nomiarch/nomiarch/releases/tag/desktop-v0.1.0.dev5">Release notes and download checksums ↗</a></p>
-<h2 id="destination">2. Choose where it runs</h2>
-<p>For your first end-to-end test, choose <strong>Set up this computer → Personal evaluation → Isolated VM</strong>. Enter short project and environment names, such as <strong>acme</strong> and <strong>evaluation</strong>, and choose a new configuration folder. Personal evaluation can keep a local approval record.</p>
-<p>A <strong>VM (virtual machine)</strong> is a separate computer running inside your computer. Windows or macOS hosts the wizard; a Linux VM holds Nomiarch, its local AI model and data. The wizard checks VM support and guides its installation when it is missing.</p>
-<p>For an organisation, choose a customer repository and designated human reviewers. For cloud installation, choose <strong>Set up in the cloud — Azure</strong> and follow the <a href="#azure">Azure steps</a>. For an existing disconnected site, use the <a href="#offline">offline steps</a>.</p>
-<h2 id="download">3. Let the app prepare the files</h2>
-<p>Choose <strong>Download and verify automatically</strong>. Nomiarch downloads the runtime, local model and matching Ubuntu image, checks the files and verifies the Core signature. You see download progress in the app.</p>
-<p>Inside a disconnected site, choose <strong>Use files I brought into this environment</strong>. The app checks the local kit and stops if anything is missing.</p>
-<h2 id="install">4. Review your configuration and plan</h2>
-<ol>
-  <li>Choose a system name and keep the recommended CPU, memory and disk settings for your first test.</li>
-  <li>Select <strong>Create my configuration</strong>. Open the folder to inspect your settings and the installation recipe. No VM has been created.</li>
-  <li>If you chose an organisation repository, have a designated person approve and merge the configuration PR using the <a href="#customer-repository">repository steps below</a>.</li>
-  <li>Choose <strong>Prepare deployment plan</strong>. Review the destination, capacity, network mode and proposed resources. Azure resources incur charges.</li>
-  <li>Choose <strong>Approve this plan and create the system</strong>. Keep the app open while it creates the new VM, installs Core and checks the result.</li>
-</ol>
-<p>Approval belongs to the exact saved plan. Changed settings or admitted files require a new review, and plans expire after one hour. Your existing VMs are kept in place.</p>
-<h2 id="verify">5. Check your system</h2>
-<p>When setup says <strong>Your system is ready</strong>, open <strong>Manage my installation → Verify</strong>. The sample task deliberately includes two failing controls and one passing control. The local guest network check is separate.</p>
-<p>For live measurements, choose <strong>Observe and review foundation changes → Check this environment with Core</strong>. Core compares observed capacity, its running release and outbound policy with your configuration. With a GitHub read token, it also checks the repository revision. There is no browser dashboard in this preview.</p>
-<h2 id="azure">Azure installation</h2>
-<ol>
-  <li>Choose <strong>Set up in the cloud — Azure</strong> and complete your project and repository choices.</li>
-  <li>Select <strong>Sign in to Microsoft Azure</strong>. Enter the displayed code on Microsoft's sign-in page and complete sign-in there. Nomiarch does not ask for your account password.</li>
-  <li>Choose your subscription, region and a privately reachable subnet. Your administrator must provide the VPN/private route and management range.</li>
-  <li>Choose the VM size and matching capacity. The wizard records an exact Ubuntu image version and generates a customer-owned Terraform scaffold.</li>
-  <li>Prepare the files, review the configuration and saved resource plan, then approve deployment.</li>
-</ol>
-<div class="callout neutral"><strong>Private cloud, with clear prerequisites.</strong><p>This first cloud recipe supports Azure and requires an existing private administration route. It does not create a VPN gateway or Bastion. The VM has no public IP, but Azure platform services remain dependencies. Cloud isolation is not a physical air gap.</p></div>
-<h2 id="customer-repository">Organisation repositories and human approvals</h2>
-<ol>
-  <li>Select <strong>Private GitHub repository with human review</strong> for GitHub.com, or use the <a href="#internal-github">internal server steps below</a>. Enter the customer owner, a dedicated repository name and the human reviewer logins. Separate multiple logins with commas.</li>
-  <li>Provide a customer GitHub token in the app. The token stays in memory. Repository creation needs administration access, and your GitHub plan must support protected private branches.</li>
-  <li>Choose <strong>Create a NEW private customer repository</strong>, then <strong>Open a configuration pull request</strong>. An existing repository must already have the required protection and be dedicated to this scaffold.</li>
-  <li>Have a designated person other than the proposer approve the final PR commit and merge it. Enter the merged PR number in the wizard.</li>
-  <li>Prepare and approve the deployment plan. The app checks the current repository contents, protection and human review again before applying.</li>
-</ol>
-<h3 id="internal-github">Use your organisation's internal GitHub server</h3>
-<p>This option connects to an existing <strong>GitHub Enterprise Server</strong> in your private network. Your administrator provides the server; the wizard creates your Nomiarch configuration repository on it. It can support approvals inside a disconnected site.</p>
-<ol>
-  <li>Ask your administrator for the server's HTTPS address, repository owner, human reviewer logins and an access token issued by that server. If your site uses a private certificate authority, also ask for its <strong>public CA certificate file</strong> in PEM format.</li>
-  <li>Choose <strong>Organisation</strong>, then <strong>Internal GitHub Enterprise Server with human review</strong>. For an offline installation, choose <strong>Disconnected site</strong> on the environment screen.</li>
-  <li>Enter the root address, such as <strong>https://git.company.internal</strong>. The wizard adds the API path for you. The server must resolve only to supported private network addresses.</li>
-  <li>If needed, select <strong>Choose public CA certificate…</strong>. Compare its displayed file fingerprint with your administrator's value. The file contains public certificates; never supply a private key.</li>
-  <li>Enter the owner, a new dedicated repository name, reviewer logins and token. Changing the server, certificate or account settings clears the token, so enter it after completing those settings.</li>
-  <li>Complete VM support and select your admitted software kit. Choose <strong>Create my configuration</strong>, then <strong>Create a NEW private customer repository</strong> and <strong>Open a configuration pull request</strong>.</li>
-  <li>Have a different designated person review and merge the final PR on the internal server. Enter its number in the wizard, prepare the deployment plan and approve it.</li>
-</ol>
-<p>The connection verifies HTTPS certificates and the server name. Public addresses, mixed public/private DNS results, redirects and proxy routing are refused. If connection checks fail, ask your administrator to check the direct private route, internal DNS and public CA certificate.</p>
-<p>The same internal approval flow applies to repairs, upgrades and removal. Core can propose a change; a human must approve it before the controller deploys it. Bring new release kits through your site's approved transfer process. Other Git products currently support configuration export only.</p>
-<p>Use a separate account for proposals and human-controlled deployment credentials. Core gets neither the GitHub token nor the cloud credentials. State, keys and private deployment plans stay outside Git. Back up the controller's private installation records separately from your configuration.</p>
-<p>Azure scaffolds use a pinned Terraform/OpenTofu module. Local VM lifecycle currently uses a Multipass adapter and a declarative configuration file, with the same approval rules. A native Terraform provider for local VMs is not included yet.</p>
-<p>New configuration folders use recipe 0.3.0. Existing 0.2.0 folders still open with their original settings and Core version. Moving an existing installation to a different repository server is not an in-place operation in this preview.</p>
-<h2 id="proposals">Let Core propose a repair</h2>
-<p>On the observation screen, you can run a check manually or enable checks every minute while the app and that screen stay open. If supported settings drift, the controller can export Core's bounded repair request or open a customer PR. A pending proposal prevents repeated automatic PRs.</p>
-<p>Review and merge the PR, open <strong>Review a proposed configuration folder</strong>, prepare a fresh plan and approve it. Core cannot approve or apply its own proposal. Changed repository or release versions need separate review; they are not silently adopted as the new baseline.</p>
-<h2 id="upgrade">Upgrade through the same wizard</h2>
-<ol>
-  <li>Get the desktop release that admits the new Core version and prepare its download kit.</li>
-  <li>In <strong>Manage an installation</strong>, select your system and choose <strong>Upgrade</strong>.</li>
-  <li>Select the kit's signed bundle and public key. Save the new private recovery key separately from backups.</li>
-  <li>Review the operation request. Organisation customers need a new human-approved PR for this upgrade.</li>
-  <li>Prepare and approve the upgrade plan. The controller exports an encrypted backup before starting the release change.</li>
-</ol>
-<p>Repair and removal also get their own operation request and plan. Approval to install does not authorize later replacement or deletion. Expect downtime during upgrades. K3s migrations and automatic rollback are not supported. <a href="https://github.com/Nomiarch/nomiarch/blob/main/docs/testing.md#upgrade-repair-and-recovery">Recovery procedure ↗</a></p>
-<h2 id="offline">Installing at a disconnected site</h2>
-<ol>
-  <li>On a connected computer, choose <strong>Download an offline kit</strong>. Windows/macOS kits include the pinned VM-support installer.</li>
-  <li>Transfer the kit and app through your approved process to a computer with the same operating system and CPU architecture. Admit Linux VM support through your software manager.</li>
-  <li>On the destination, choose <strong>Disconnected site</strong>. Personal evaluation can use local approval. Organisation installations use the <a href="#internal-github">internal GitHub server option</a>.</li>
-  <li>If VM support is missing, select the installer from the admitted kit.</li>
-  <li>Choose the local kit, review the configuration and approve the plan. Missing files stop setup instead of triggering a download.</li>
-</ol>
-<p>The local guest boundary blocks new outbound IPv4/IPv6 traffic, with fixed exceptions for local runtime networking and administration replies. It is applied after VM creation. Verify it after a reboot and test your actual network paths.</p>
-<div class="callout neutral"><strong>A VM is not automatically air-gapped.</strong><p>The wizard does not disconnect your host's Ethernet, Wi-Fi or radios. A physical air gap requires a disconnected host/site and controlled transfers. Keep the controller, internal GitHub server, DNS, sign-in services and reviewers' computers inside that boundary. Public GitHub needs Internet access.</p></div>
-<p>Internal approval checks have been tested with real HTTPS and simulated server responses. An installation on your actual GitHub Enterprise Server and disconnected network still needs customer validation. <a href="https://github.com/Nomiarch/nomiarch/blob/main/docs/foundation.md#internal-github-enterprise-server">Administrator prerequisites and validation scope ↗</a></p>
-<h2 id="cleanup">Finished testing?</h2>
-<p>Save any backup you need, then select the installation and choose <strong>Remove selected VM</strong>. Review its removal request and plan. Organisation users need a human-approved removal PR. Approving removal permanently deletes the recorded VM and disks.</p>
-<h2 id="help">If setup stops</h2><p>Mac app blocked before it opens? Follow the <a href="#macos-open-anyway">Mac opening steps</a>.</p><p>The app shows the error and preserves installation records. Retry a download to reuse verified completed files. For an interrupted installation, use Manage to inspect, repair or remove the retained VM. Starting a new install creates another VM.</p>
-<p><a href="https://github.com/Nomiarch/nomiarch/blob/main/docs/foundation.md">Full customer configuration and approval guide ↗</a> · <a href="https://github.com/Nomiarch/nomiarch/blob/main/docs/desktop.md">Desktop guide ↗</a> · <a href="https://github.com/Nomiarch/nomiarch/blob/main/docs/testing.md">Advanced recovery and testing ↗</a></p>
-<p class="smallprint">Desktop 0.1.0.dev5 · Core 0.1.0.dev3 · Windows, macOS and Linux preview</p></main></div>  <footer class="footer"><div class="container footer-inner"><div><a class="brand" href="../../" aria-label="Nomiarch home"><img class="brand-wordmark" src="../../assets/brand/wordmark-mint.svg" alt="Nomiarch" width="821" height="120"></a><p>An independent project by Vibhu Anand.</p></div><nav class="footer-links" aria-label="Footer"><a href="../">Documentation</a><a href="../architecture/">Architecture</a><a href="../../#roadmap">Roadmap</a><a href="./">Release status</a></nav><span class="footer-year">© 2026 Nomiarch</span></div></footer>
+<p><a href="https://github.com/Nomiarch/nomiarch/releases/tag/desktop-v0.1.0.dev6">Release notes and download checksums ↗</a></p>
+<h2 id="destination">2. Choose the infrastructure and Git service</h2>
+<p>Choose <strong>Set up infrastructure — Local, On-premises or Cloud (no AI yet)</strong>. Enter project and environment names, such as <strong>nomi-test</strong> and <strong>evaluation</strong>.</p>
+<ul><li><strong>Local:</strong> creates a dedicated Ubuntu VM on this computer with Multipass.</li><li><strong>On-premises:</strong> adopts a dedicated Ubuntu 24.04 host or VM your organisation provides over trusted SSH. It does not create or delete that host.</li><li><strong>Cloud:</strong> Azure is the only implemented provider. It creates a private VM, storage and network configuration.</li></ul>
+<p>Select <strong>GitHub SaaS</strong> (github.com, including Enterprise Cloud) or your existing <strong>GitHub Enterprise Server</strong>. Both require a private configuration repository, successful validation and a separate human reviewer. Selecting Enterprise Server does not install or license a Git server.</p>
+<p>Choose <strong>Restricted connected</strong> for a normal first Local test. Fully disconnected requires Local or On-premises and internal Git; the wizard rejects Azure or GitHub SaaS in that mode.</p>
+<h2 id="download">3. Prepare infrastructure files</h2>
+<p>Local setup admits the matching Ubuntu image and VM-support installer. Choose <strong>Download and verify automatically</strong> on a connected computer, or <strong>Use files I brought into this environment</strong> inside the boundary. Missing or altered offline files stop setup without a download.</p>
+<p>The infrastructure path does not download a model or Core bundle. On-premises requires an SSH private key and an out-of-band enrolled <strong>known_hosts</strong> file. Keep both outside the configuration repository.</p>
+<h2 id="install">4. Review, validate and approve</h2>
+<ol><li>Set capacity and target-specific settings. Select <strong>Create my configuration</strong> and inspect the generated folder. Recipe <strong>0.4.0</strong> has scope <strong>infrastructure</strong> and no runtime/model pins. No VM is created yet.</li><li>Create the dedicated private repository and open a configuration PR using the <a href="#customer-repository">steps below</a>.</li><li>Wait for <strong>nomiarch-validate</strong>, independent review and authorized merge. Enter the merged PR number.</li><li>Choose <strong>Prepare deployment plan</strong>. Review the exact destination, capacity, network policy and resource actions. Planning creates no VM.</li><li>Choose <strong>Approve this plan and establish the infrastructure</strong>. Keep the app open while it provisions and verifies. Azure resources incur charges until removed.</li></ol>
+<p>Plans expire after one hour and are single-use. Reopening a configuration offers <strong>Review the saved plan</strong> for an unexpired plan. An expired or invalid unused plan can be retired with its evidence retained, then replaced through fresh checks and explicit approval. Provisioned or uncertain runs cannot use that shortcut.</p>
+<h2 id="verify">5. Confirm infrastructure readiness</h2>
+<p>Expect <strong>Infrastructure ready</strong>, a recorded inventory and application status <strong>not-installed</strong>. There should be one retained VM for Local/Azure, or the recorded adopted host for On-premises. No model or AI agent has been installed.</p>
+<p>Choose <strong>Manage an installation → Verify</strong>. It checks OS, capacity, administration and the applicable network boundary. Azure checks the OS filesystem separately from the declared data disk. Reopening setup must not create duplicate resources.</p>
+<p>Before moving to models and agents, test one real Local installation, plan resume/expiry, verification, backup/recovery and separately approved removal. Automated tests and packaged scaffold checks have passed; real customer deployments, GitHub/GHES integrations, physical disconnection and clean-host recovery still require acceptance testing.</p>
+<h2 id="azure">Azure prerequisites</h2>
+<p>Select <strong>Cloud → Microsoft Azure</strong>. Sign in through Microsoft's device-code page, then choose the subscription, region, VM size and a privately reachable subnet. Your administrator must supply the private route and management CIDR. The wizard does not create a VPN gateway or Bastion and does not open public SSH. Azure platform/control-plane dependencies mean this is restricted connected, not a physical air gap.</p>
+<h2 id="customer-repository">Repository checks and independent human approval</h2>
+<ol><li>Use a dedicated test repository and a designated human reviewer other than the proposer. Your GitHub service must support protected private branches and Actions validation.</li><li>Enter the bootstrap token in the app, with permissions for repository creation/protection, contents/workflows, PRs and reading check results as required by your server. It stays outside Git and model context.</li><li>Select <strong>Create a NEW private customer repository</strong>, then <strong>Open a configuration pull request</strong>.</li><li>Confirm the required <strong>nomiarch-validate</strong> check succeeds. Have the designated human approve the final commit and authorize its merge.</li><li>Enter the merged PR number. The controller rechecks contents, protection, the newest trusted validation result and final-commit human review before execution. Separate plan approval is still required.</li></ol>
+<p>The executor is a human-operated desktop controller. This preview does not claim an automated deployment pipeline. Future Nomi agents must have no merge, policy-administration or infrastructure-write authority.</p>
+<h3 id="internal-github">GitHub Enterprise Server</h3>
+<p>Supply your existing server's root HTTPS address, for example <strong>https://git.company.internal</strong>, repository owner, reviewer logins and server-issued token. If needed, select its public CA certificate and verify the fingerprint with your administrator. Never supply a private CA key. The server must resolve only to supported private addresses; TLS, hostname and direct-routing checks remain enforced.</p>
+<p>Provide an internal, unprivileged validation runner labelled <strong>nomiarch-validation</strong> with Python 3.11+ and the admitted checkout action. It must have no deployment credentials. Keep Git, identity services, DNS, time, reviewers and validation dependencies inside a fully disconnected boundary.</p>
+<h2 id="proposals">Models and agents come later</h2>
+<p>This milestone ends at infrastructure readiness. Models, Nomi Core, specialized agents and the AI request dashboard are later reviewed changes. Existing <strong>Core (preview)</strong> setup paths remain available for older workflows; they still use admitted Core 0.1.0.dev3. Restart the app before switching between infrastructure setup and a Core preview flow because setup-mode reset is a known issue.</p>
+<h2 id="upgrade">Backup, recovery and preview limits</h2>
+<p><strong>Infrastructure status and backup</strong> exports reviewed configuration and controller records. The current desktop export is unencrypted and omits sensitive Terraform state and logs. It is not a complete Azure recovery backup. Preserve the private controller directory and keys separately with your approved protection and test clean-host recovery before relying on it.</p>
+<p>Application install/upgrade/repair are later operations for infrastructure-only foundations. Older Core installations retain their existing maintenance workflow. Do not use a Core database backup as infrastructure recovery.</p>
+<h2 id="offline">Fully disconnected evaluation</h2>
+<p>Admit the desktop app, OS image, VM-support tools, internal validation dependencies and trust material through the site's controlled transfer process. Use the infrastructure flow on a matching connected staging computer to prepare its image files; the home-screen general offline-kit action belongs to the older Core flow and may include model/runtime files.</p>
+<p>Choose <strong>Fully disconnected</strong> and <strong>GitHub Enterprise Server</strong> on Local or On-premises. Use the admitted local files. A firewall or blocked probe does not prove an air gap: the site must disconnect external routes and qualify its administration and transfer boundary. The wizard does not disconnect Ethernet, Wi-Fi or radios.</p>
+<h2 id="cleanup">Finish the test with reviewed removal</h2>
+<p>Retain needed records and backups, then choose <strong>Remove selected VM</strong>. The removal requires its own PR, independent review, merge, saved plan and explicit approval. Only the recorded created VM/resources may be removed. Adopted on-premises hosts are never deleted by Nomiarch.</p>
+<h2 id="help">If setup stops</h2>
+<p>For macOS launch warnings, follow the <a href="#macos-open-anyway">app-specific opening steps</a>. If Local planning reports missing VM support, install Canonical Multipass first; the infrastructure screens do not yet include its installer controls.</p>
+<p>Keep the failed run directory, logs and any partial state. Use Manage to inspect it; do not create another foundation to conceal a partial deployment. This preview is unsigned and customer-environment qualification is still pending.</p>
+<p><a href="https://github.com/Nomiarch/nomiarch/blob/main/docs/infrastructure-bootstrap.md">Infrastructure bootstrap guide ↗</a> · <a href="https://github.com/Nomiarch/nomiarch/blob/main/docs/testing.md">Advanced testing and recovery ↗</a></p>
+<p class="smallprint">Desktop 0.1.0.dev6 · Core 0.1.0.dev3 · Windows, macOS and Linux preview</p></main></div>  <footer class="footer"><div class="container footer-inner"><div><a class="brand" href="../../" aria-label="Nomiarch home"><img class="brand-wordmark" src="../../assets/brand/wordmark-mint.svg" alt="Nomiarch" width="821" height="120"></a><p>An independent project by Vibhu Anand.</p></div><nav class="footer-links" aria-label="Footer"><a href="../">Documentation</a><a href="../architecture/">Architecture</a><a href="../../#roadmap">Roadmap</a><a href="./">Release status</a></nav><span class="footer-year">© 2026 Nomiarch</span></div></footer>
 </body></html>
